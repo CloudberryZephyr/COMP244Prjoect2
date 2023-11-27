@@ -18,3 +18,4 @@ update project set nVolneeded = nVolneeded - 1
 where projID = NEW.projID;
 
 end @@
+delimiter ;

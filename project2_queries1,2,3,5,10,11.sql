@@ -9,8 +9,6 @@ from volunteer
 where Address like "%Grove City%";
 
 # 3. Change the duration of a timeslot: change the duration to 5 for the timeslot of project 2213, the starting time 12:00:00 and the date is “2021-09-08” [5 points]
--- select projID, startingTime, Day, duration
--- from timeslot;
 update timeslot
 set duration = 5
 where projID = 2213 AND startingTime = "12:00:00" AND Day = "2021-09-08";

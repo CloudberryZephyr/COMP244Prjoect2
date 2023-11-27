@@ -1,6 +1,5 @@
 
 # trigger 1
-
 DELIMITER @@
 DROP TRIGGER IF EXISTS updateNProjects @@
 CREATE TRIGGER updateNProjects
@@ -9,6 +8,6 @@ CREATE TRIGGER updateNProjects
 BEGIN
 	UPDATE organization
     SET nProjects = nProjects + 1
-    WHERE orgid = NEW.orgid;
+    WHERE orgno = NEW.orgno;
 END @@
 DELIMITER ;
